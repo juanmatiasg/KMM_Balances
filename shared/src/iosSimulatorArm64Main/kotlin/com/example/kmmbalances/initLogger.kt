@@ -9,5 +9,5 @@ actual fun initLogger() {
 }
 
 actual fun createHttpClient(): HttpClient {
-   return HttpClient()
+    return HttpClient()
 }
