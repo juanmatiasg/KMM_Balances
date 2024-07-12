@@ -4,7 +4,7 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class LibroData(
-    val tipoLibro: TipoLibro,
+    val tipoLibro: TipoLibroData,
     val tipoDocumento: String,
     val nombre: String,
     val numeroRubrica: String,

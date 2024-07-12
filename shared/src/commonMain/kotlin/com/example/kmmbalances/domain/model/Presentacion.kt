@@ -1,4 +1,6 @@
 package com.example.kmmbalances.domain.model
 
-class Presentacion {
-}
+data class Presentacion(
+    val fecha:String,
+    val binarioPdf:Byte
+)

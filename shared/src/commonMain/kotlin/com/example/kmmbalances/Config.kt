@@ -6,6 +6,6 @@ object Config {
     const val BASE_URL = "https://10.0.2.2:7172"
 
     //Endpoints Busqueda
-    const val BUSQUEDA_BY_CUIL_OR_CORRELATIVO ="/BusquedaByCuilOrCorrelativo"
+    const val ENDPOINT_FIND_CORRELATIVO_OR_CUIL ="/BusquedaByCuilOrCorrelativo"
 
 }

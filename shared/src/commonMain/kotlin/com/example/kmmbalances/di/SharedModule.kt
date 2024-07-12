@@ -1,22 +1,21 @@
 package com.example.kmmbalances.di
 
+import com.example.kmmbalances.data.remote.BusquedaService
+import com.example.kmmbalances.data.remote.DataSource
+import com.example.kmmbalances.data.repository.FindForCorrelativoOrCuilRepositoryImp
+import com.example.kmmbalances.domain.repository.FindCorrelativoOrCuilRepository
+import com.example.kmmbalances.domain.usecases.GetFindCorrelativoOrCuilUseCase
 import org.koin.dsl.module
 
 private val dataModule = module {
-   /* single { TramiteService() }
-    single { EntidadService() }
-    single { ViewService() }
-    single { DataSource(get(), get(), get()) }
-    single<TramiteRepository> { TramiteRepositoryImp(get()) }
-    single<EntidadRepository> { EntidadRepositoryImpl(get()) }
-    single<ViewRepository> { ViewRepositoryImpl(get()) }*/
+    single { BusquedaService() }
+    single { DataSource(get()) }
+    single<FindCorrelativoOrCuilRepository> { FindForCorrelativoOrCuilRepositoryImp(get()) }
 }
 
 
 private val domainModule = module {
-    /*single { GetTramiteUseCase(get()) }
-    single { GetEntidadUseCase(get()) }
-    single { GetViewUseCase(get()) }*/
+    single { GetFindCorrelativoOrCuilUseCase(get()) }
 }
 
 private val sharedModules = listOf(domainModule, dataModule)

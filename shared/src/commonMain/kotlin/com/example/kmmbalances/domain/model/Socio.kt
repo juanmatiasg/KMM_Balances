@@ -1,4 +1,9 @@
 package com.example.kmmbalances.domain.model
 
-class Socio {
-}
+import com.example.kmmbalances.data.model.PersonaHumanaData
+import com.example.kmmbalances.data.model.PersonaJuridicaData
+
+data class Socio(
+    val personasHumanas:ArrayList<PersonaHumana>,
+    val personaJuridicaData:ArrayList<PersonaJuridica>
+)

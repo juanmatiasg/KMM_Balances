@@ -1,4 +1,4 @@
-package com.example.kmmbalances.data.model
+package com.example.kmmbalances.domain.model
 
 import kotlinx.serialization.Serializable
 

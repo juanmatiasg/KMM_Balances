@@ -1,13 +1,19 @@
 package com.example.kmmbalances.domain.model
 
-data class Autoridad(
+import kotlinx.serialization.Serializable
+
+
+data class PersonaHumana(
     val id:String,
     val nombre:String,
     val apellido:String,
     val nroDocumento:String,
     val tipoDocumento:String,
     val nroFiscal:String,
-    val cargo:String,
-    val esFirmante:Boolean,
-    val estaVigente:Boolean
+    var cuotas:String,
+    var votos:String,
+    var esFirmante:Boolean,
+    var valorNominal:String
 )
+
+
